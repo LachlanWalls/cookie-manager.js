@@ -103,12 +103,9 @@ let cm = {
         let perm = i
         if (!i && _cdata[n]["type"]) perm = _cdata[n]["type"]
 
-        let value = v
-        if (!value && _cdata[n]["default"]) value = _cdata[n]["default"]
+        if (_types.indexOf(perm) < _types.indexOf(_cpref)) return _cdata[n]["default"] || false
 
-        if (_types.indexOf(perm) < _types.indexOf(_cpref)) return false
-
-        _setCookie(n, value, expiry)
+        _setCookie(n, v, expiry)
 
         return true
     }
