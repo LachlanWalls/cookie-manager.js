@@ -9,7 +9,6 @@ Automatically taking care of your precious cookies, in full compliance (with bui
 - Get and set cookies.
 - Log cookies with levels of importance and default values.
 - Allow the user to choose which levels of cookies they allow.
-- Built-in cookie compliance messages and selection menus.
 
 ## Usage
 
@@ -81,7 +80,7 @@ Setting the cookie will simply return false.
 
 ##### User permission preferences
 
-If you wish to create your own user permissions interface, the following code can be used to manually set the preferences.
+When you create your own user permissions interface (there is no built-in one yet), the following code can be used to manually set the preferences.
 
 ```js
 cm.set_pref("essential")
